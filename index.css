@@ -1,0 +1,295 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+      background-color: black;
+      font-family: 'Open Sans', sans-serif;
+  }
+  
+  .hobbies {
+      margin-top: 30px;
+      margin-bottom: 50px;
+  }
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+    margin-right: 25px;
+    margin-left: 25px;
+} 
+
+.interests {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.professional {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.describe {
+    color: white;
+    flex:1;
+    /* text-align: center; */
+}
+
+.helloText {
+    background-color: coral;
+    padding: 5px 10px;
+    width: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+}
+
+.profileFlex {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.profileImage {
+    flex:1;
+}
+
+.webIcons {
+    margin-right: 30px;
+}
+
+.upperImage {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.interestFlex {
+    display: flex;
+    align-items: center;
+}
+
+.newHeading {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+.cardContainer {
+    /* box-shadow: -1rem 0 3rem #312828; */
+    padding: 20px;
+    border-radius: 4px;
+    color: white;
+    width: 500px;
+    margin-right: 20px;
+    margin-left: 20px;
+    /* background-color: #202026 */
+}
+
+.workContainer {
+    padding: 30px 0;
+    /* box-shadow: -1rem 0 3rem #1d1717; */
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    color: white;
+    background-color: #2020265c;
+    width: 400px;
+}
+
+.cardContainer:hover{
+    transition: box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+    box-shadow: -1rem 0 3rem #312828;
+}
+
+.comp {
+    color: coral;
+}
+
+.listItem {
+    margin-top: 10px;
+}
+.innerText {
+    margin-top: 15px;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.bottomText {
+    text-align: center;
+    font-size: 1.4rem;
+    color: coral;
+}
+
+.name {
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color:black;
+}
+.brand {
+    float: left;
+}
+
+.menu {
+    height: 100%;
+    float: right;
+}
+
+.menu ul {
+    width: 100%;
+    display: flex;       
+}
+
+.menu ul a {
+    color:white;
+    display: inline-block;
+}
+
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    .menu ul {
+        display: block;
+        max-height: 0;
+    	overflow: hidden;
+        transition: max-height 0.3s;
+        position: relative;
+        background-color:black;
+    }
+    .menu ul a {
+        text-align: left;
+        width: 100%;
+        height: 50px;
+        padding: 10px 0px 10px 5%;
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 60px;
+        color: white;
+    }
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+        }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+    .myProfile {
+        height: 180px;
+    }
+
+    .workContainer {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width: 992px ) and (max-width: 1200px) {
+    .myProfile {
+        height: 220px;
+    }
+
+    .profileImage{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 767px ) and (max-width: 991px) {
+    .myProfile {
+        height: 180px;
+    }
+}
+
+
+@media screen and (min-width: 600px){
+    /* .myProfile{
+        height: 180px;
+    } */
+}
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (max-width: 600px) {
+        .profileFlex {
+            flex-wrap: wrap;
+            display: block;
+        }
+        .myProfile {
+            height: 180px;
+        }
+
+        .helloText {
+            margin-top: 25px;
+            display: inline-block;
+        }
+
+        .describe {
+            text-align: center;
+        }
+
+        .interestFlex {
+            flex-wrap: wrap;
+        }
+
+        .cardContainer {
+             box-shadow:  0rem 1px 3rem 0px #312828;
+             margin-bottom: 20px;
+        }
+
+        .profileImage {
+            text-align: center;
+        }
+  }
+
+
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+    .workContainer {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+    
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }

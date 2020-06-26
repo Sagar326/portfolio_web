@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Portfolio Assignment</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+     <header>
+        <div class="container">
+            <img src="./assets/logo.jpg" height="60px" class="brand">
+            <nav class="menu">
+                <input type="checkbox" id="menuToggle">
+                <label for="menuToggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+                <ul>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#interest"><li>Interests</li></a>
+                    <a href="#work"><li>Work Experience</li></a>
+                    <a href="#project"><li>Projects</li></a>
+                </ul>
+            </nav>
+        </div>
+     </header>
+
+     <section class="hobbies" id="home">
+            <div class="container">
+                <div class="profileFlex">
+                    <div class="profileImage">
+                        <img src="./assets/ab-img.png" height="300" class="myProfile"/>
+                    </div>
+                    <div class="describe">
+                        <div class="helloText">Hello I'm</div>
+                        <h1 class="name">Sagar</h3>
+                            <!-- <h4></h4> -->
+                            <p>A Software Developer with a strong passion to build website's and <br/> Front End Applications.</p>
+                            <br/>
+                            <p>Outside of work , I love to watch sports and play online games. </p>
+                    </div>
+                </div>
+            </div>  
+     </section>
+
+     <section class="interests" id="interest">
+            <div class="container">
+                <div class="newHeading"><h1>Interest</h1></div>
+                <div class="interestFlex">
+                    <div class="cardContainer">
+                        <div class="upperImage">
+                        <img src="./assets/icons8-html-5-48.png" alt="" class="webIcons">
+                        <img src="./assets/icons8-css3-48.png" alt="" class="webIcons">
+                        <img src="./assets/icons8-javascript-48.png" alt="" class="webIcons">
+                        </div>  
+                        <h3>Web Development</h2>
+                        <p class="innerText">
+                            Using 3 basic technologies - HTML, CSS and JavaScript , an idea from the drawing is converted into reality.
+                            A useful and lucrative skill to acquire as it is used by nearly every single business in the world that needs a website to communicate to its customers
+                        </p>
+                    </div>
+
+                    <div class="cardContainer">
+                        <div class="upperImage">
+                        <img src="./assets/icons8-react-native-48.png" alt="" class="webIcons">
+                        <img src="./assets/icons8-nodejs-48.png" alt="" class="webIcons">
+                        <img src="./assets/icons8-mongodb-48.png" alt="" class="webIcons">
+                        </div>  
+                        <h3>Application Development</h2>
+                        <p class="innerText">
+                            Using front-end technology for client and back-end technologiy for server, a full blown application can be created.
+                             A popular library 'React' with back-end as 'Node' along with database 'Mongodb' helps to create a magic.
+                        </p>
+                    </div>
+                   
+                </div>
+            </div>
+    </section>
+
+    <section class="professional" id="work">
+        <div class="container">
+            <div class="newHeading"><h1>Work Experience</h1></div>
+            <div class="interestFlex" style="justify-content: space-evenly;">
+                <div class="workContainer">
+                    <img src="./assets/icons8-erp-system-64.png" alt="">
+                    <h2>Associate Engineer</h2>
+                    <div class="comp">at EITS , Mohali</div>
+                    <ul>
+                        <li class="listItem">- Maintaining Functional architecture standards for business</li>
+                        <li class="listItem">- Supporting Manufacturing domain in support of team leading from overseas</li>
+                    </ul>
+                </div>
+                <div class="workContainer">
+                    <img src="./assets/icons8-react-native-64.png" alt="">
+                    <h2>Software Developer</h2>
+                    <div class="comp">Chandigarh</div>
+                    <ul>
+                        <li class="listItem">- Developing flexible front-end applications, along with the APIs to support it</li>
+                        <li class="listItem">- Responsible for development of a new custom , web-based user interface</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="professional" id="project">
+        <div class="container">
+            <div class="newHeading"><h1>Projects</h1></div>
+            <div class="bottomText">Oh! I just finished my first live project <a href="#home"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></div>
+        </div>
+        </section>
+
+     <footer>
+
+     </footer>
+
+     <script>
+        $('.menubtn').on('click', function() {
+     $('nav > ul').slideToggle().trigger('click');
+        });
+        </script>
+</body>
+</html>
